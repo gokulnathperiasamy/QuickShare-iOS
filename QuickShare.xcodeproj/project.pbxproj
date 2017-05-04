@@ -13,6 +13,7 @@
 		AD60190E1EBB81F20027CC18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD60190C1EBB81F20027CC18 /* Main.storyboard */; };
 		AD6019101EBB81F20027CC18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD60190F1EBB81F20027CC18 /* Assets.xcassets */; };
 		AD60191F1EBB853B0027CC18 /* ShareCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60191E1EBB853B0027CC18 /* ShareCardVC.swift */; };
+		AD6019211EBB94E20027CC18 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6019201EBB94E20027CC18 /* Messages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AD60190F1EBB81F20027CC18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD6019141EBB81F20027CC18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD60191E1EBB853B0027CC18 /* ShareCardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareCardVC.swift; sourceTree = "<group>"; };
+		AD6019201EBB94E20027CC18 /* Messages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		AD60191D1EBB82130027CC18 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				AD6019201EBB94E20027CC18 /* Messages.swift */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				AD60190B1EBB81F20027CC18 /* ProfileVC.swift in Sources */,
 				AD6019071EBB81F20027CC18 /* AppDelegate.swift in Sources */,
+				AD6019211EBB94E20027CC18 /* Messages.swift in Sources */,
 				AD60191F1EBB853B0027CC18 /* ShareCardVC.swift in Sources */,
 				AD6019091EBB81F20027CC18 /* HomeVC.swift in Sources */,
 			);

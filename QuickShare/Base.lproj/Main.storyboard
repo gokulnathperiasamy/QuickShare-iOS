@@ -46,6 +46,9 @@
                     <navigationItem key="navigationItem" title="Quick Share" id="Ibj-dB-i2Z">
                         <barButtonItem key="leftBarButtonItem" title="About" id="JeR-Fv-hHu">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="aboutAction:" destination="9pv-A4-QxB" id="ZF4-X5-Wrx"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ply-hH-OGD">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -222,7 +225,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="home" width="24" height="24"/>
+        <image name="home" width="30" height="30"/>
         <image name="profile" width="29" height="30"/>
         <image name="share" width="30" height="30"/>
     </resources>

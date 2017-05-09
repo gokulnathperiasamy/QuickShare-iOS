@@ -10,16 +10,30 @@ import UIKit
 
 class ProfileVC: UIViewController {
 
+    @IBOutlet weak var firstName: UITextField!
+    @IBOutlet weak var lastName: UITextField!
+    @IBOutlet weak var companyName: UITextField!
+    @IBOutlet weak var companyAddress: UITextField!
+    @IBOutlet weak var emailID: UITextField!
+    @IBOutlet weak var mobileNumber: UITextField!
+    @IBOutlet weak var officeNumber: UITextField!
+    @IBOutlet weak var faxNumber: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.tabBarController?.tabBar.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func actionCancel(_ sender: UIBarButtonItem) {
+        
     }
 
-
+    @IBAction func actionSave(_ sender: UIBarButtonItem) {
+        
+    }
 }
 

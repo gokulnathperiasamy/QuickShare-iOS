@@ -21,28 +21,7 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Home" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="139" y="313" width="97" height="41"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by HomeVC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="124" y="362" width="127" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Quick Share" id="Ibj-dB-i2Z">
                         <barButtonItem key="leftBarButtonItem" title="About" id="JeR-Fv-hHu">
@@ -97,7 +76,7 @@
                                         <rect key="frame" x="0.0" y="123" width="323" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C1Z-6d-6P7">
                                         <rect key="frame" x="0.0" y="164" width="323" height="30"/>
@@ -136,11 +115,28 @@
                     <navigationItem key="navigationItem" title="My Profile" id="CAM-gc-LKB">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="iCh-tY-DXa">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="actionCancel:" destination="8rJ-Kc-sve" id="i4u-XS-kFA"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Ltg-qe-SnE">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="actionSave:" destination="8rJ-Kc-sve" id="bao-4g-Aw1"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="companyAddress" destination="0ft-Rw-jAJ" id="r3P-IO-yHL"/>
+                        <outlet property="companyName" destination="a9F-0C-BOF" id="aGj-DM-Wj5"/>
+                        <outlet property="emailID" destination="C1Z-6d-6P7" id="Jfh-YZ-asl"/>
+                        <outlet property="faxNumber" destination="RgK-tb-0ED" id="XQD-67-sho"/>
+                        <outlet property="firstName" destination="eHm-SJ-4r2" id="WOH-DI-0tX"/>
+                        <outlet property="lastName" destination="UQu-aJ-Lie" id="N5S-GD-2Gd"/>
+                        <outlet property="mobileNumber" destination="qL7-Rj-uia" id="D5R-GB-YAl"/>
+                        <outlet property="officeNumber" destination="TFB-6E-Mek" id="UhM-i4-iPD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -196,28 +192,7 @@
                     <view key="view" contentMode="scaleToFill" id="Bka-KX-UHy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Share Card" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="lKb-SO-tqB">
-                                <rect key="frame" x="95" y="312.5" width="185" height="42"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by ShareCardVC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTG-IT-9Dn">
-                                <rect key="frame" x="108" y="361.5" width="159" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="jTG-IT-9Dn" firstAttribute="centerX" secondItem="lKb-SO-tqB" secondAttribute="centerX" id="Bev-Zu-A5Q"/>
-                            <constraint firstItem="lKb-SO-tqB" firstAttribute="centerX" secondItem="Bka-KX-UHy" secondAttribute="centerX" id="iJ2-YH-fqS"/>
-                            <constraint firstItem="lKb-SO-tqB" firstAttribute="centerY" secondItem="Bka-KX-UHy" secondAttribute="centerY" id="qyn-5C-F81"/>
-                            <constraint firstItem="jTG-IT-9Dn" firstAttribute="top" secondItem="lKb-SO-tqB" secondAttribute="bottom" constant="7" id="rcj-UM-bWS"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Share Your Card" id="QDa-Tc-Hzv"/>
                 </viewController>
@@ -228,15 +203,18 @@
         <!--My Profile-->
         <scene sceneID="T5T-AR-XNc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rmG-5q-hpg" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="rmG-5q-hpg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Profile" image="profile" id="cPa-gy-q4n"/>
                     <toolbarItems/>
-                    <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ziu-0W-PZ1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="MKB-ji-c5K">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="4iB-Rq-f0w"/>
                     </connections>

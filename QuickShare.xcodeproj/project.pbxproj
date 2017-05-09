@@ -39,6 +39,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD2300BE1EBC8FBB0035E041 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		AD6018FA1EBB81F20027CC18 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +65,7 @@
 		AD6019051EBB81F20027CC18 /* QuickShare */ = {
 			isa = PBXGroup;
 			children = (
+				AD2300BE1EBC8FBB0035E041 /* Extensions */,
 				AD60191D1EBB82130027CC18 /* Application */,
 				AD60191A1EBB82010027CC18 /* Model */,
 				AD60191B1EBB82060027CC18 /* View */,
@@ -334,6 +342,7 @@
 				AD6019191EBB81F20027CC18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

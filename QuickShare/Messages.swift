@@ -24,5 +24,8 @@ class Messages {
     public static let WARNING_MESSAGE_LOADING = "Please Wait. Loading..."
     public static let WARNING_MESSAGE_PROFILE_NOT_SET = "Please click on My Profile tab to set your profile."
     public static let WARNING_MESSAGE_CARD_NOT_AVAILABLE = "No Cards. Please add cards using + button."
+    
+    public static let PROFILE_PAGE_CANCEL_ALERT_TITLE = "My Profile"
+    public static let PROFILE_PAGE_CANCEL_ALERT_MESSAGE = "Do you want to cancel? Unsaved data will be lost!"
 
 }

@@ -30,6 +30,18 @@ class ProfileVC: BaseVC {
     
     @IBAction func actionCancel(_ sender: UIBarButtonItem) {
         
+        let cancelAlert = UIAlertController(title: Messages.PROFILE_PAGE_CANCEL_ALERT_TITLE, message: Messages.LINE_BREAK + Messages.PROFILE_PAGE_CANCEL_ALERT_MESSAGE, preferredStyle: UIAlertControllerStyle.alert)
+        
+        cancelAlert.addAction(UIAlertAction(title: Messages.ACTION_OK, style: .default, handler: { (action: UIAlertAction!) in
+            self.tabBarController?.tabBar.isHidden = false
+            self.tabBarController?.selectedIndex = 0
+        }))
+        
+        cancelAlert.addAction(UIAlertAction(title: Messages.ACTION_CANCEL, style: .cancel, handler: { (action: UIAlertAction!) in
+            // Do nothing...
+        }))
+        
+        present(cancelAlert, animated: true, completion: nil)
     }
 
     @IBAction func actionSave(_ sender: UIBarButtonItem) {

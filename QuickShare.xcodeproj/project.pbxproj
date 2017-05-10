@@ -14,6 +14,8 @@
 		AD6019101EBB81F20027CC18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD60190F1EBB81F20027CC18 /* Assets.xcassets */; };
 		AD60191F1EBB853B0027CC18 /* ShareCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60191E1EBB853B0027CC18 /* ShareCardVC.swift */; };
 		AD6019211EBB94E20027CC18 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6019201EBB94E20027CC18 /* Messages.swift */; };
+		ADD11F411EC33B7F00192FCF /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD11F401EC33B7F00192FCF /* BaseVC.swift */; };
+		ADD11F431EC33C6700192FCF /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD11F421EC33C6700192FCF /* UserDefaultKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		AD6019141EBB81F20027CC18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD60191E1EBB853B0027CC18 /* ShareCardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareCardVC.swift; sourceTree = "<group>"; };
 		AD6019201EBB94E20027CC18 /* Messages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		ADD11F401EC33B7F00192FCF /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		ADD11F421EC33C6700192FCF /* UserDefaultKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 				AD6019081EBB81F20027CC18 /* HomeVC.swift */,
 				AD60190A1EBB81F20027CC18 /* ProfileVC.swift */,
 				AD60191E1EBB853B0027CC18 /* ShareCardVC.swift */,
+				ADD11F401EC33B7F00192FCF /* BaseVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				AD6019201EBB94E20027CC18 /* Messages.swift */,
+				ADD11F421EC33C6700192FCF /* UserDefaultKeys.swift */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -183,9 +189,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD60190B1EBB81F20027CC18 /* ProfileVC.swift in Sources */,
+				ADD11F411EC33B7F00192FCF /* BaseVC.swift in Sources */,
 				AD6019071EBB81F20027CC18 /* AppDelegate.swift in Sources */,
 				AD6019211EBB94E20027CC18 /* Messages.swift in Sources */,
 				AD60191F1EBB853B0027CC18 /* ShareCardVC.swift in Sources */,
+				ADD11F431EC33C6700192FCF /* UserDefaultKeys.swift in Sources */,
 				AD6019091EBB81F20027CC18 /* HomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

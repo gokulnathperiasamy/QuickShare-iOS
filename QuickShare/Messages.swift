@@ -10,6 +10,7 @@ import Foundation
 
 class Messages {
     
+    public static let EMPTY = ""
     public static let LINE_BREAK: String = "\n"
     public static let DOUBLE_LINE_BREAK: String = "\n\n"
     
@@ -22,6 +23,6 @@ class Messages {
     
     public static let WARNING_MESSAGE_LOADING = "Please Wait. Loading..."
     public static let WARNING_MESSAGE_PROFILE_NOT_SET = "Please click on My Profile tab to set your profile."
-    public static let WARNING_MESSAGE_CARD_NOT_AVAILABLE = "No Cards.\nPlease add cards using \"+\" button."
+    public static let WARNING_MESSAGE_CARD_NOT_AVAILABLE = "No Cards. Please add cards using + button."
 
 }

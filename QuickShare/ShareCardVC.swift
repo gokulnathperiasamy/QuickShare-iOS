@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShareCardVC: UIViewController {
+class ShareCardVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()

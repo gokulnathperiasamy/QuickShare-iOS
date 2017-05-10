@@ -8,10 +8,13 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeVC: BaseVC {
 
     @IBOutlet weak var warningMessageContainer: UIView!
     @IBOutlet weak var warningMessage: UILabel!
+    
+    private var profileDataAvailable: Bool!
+    private var isCardDataAvailable: Bool!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +27,41 @@ class HomeVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        isProfileSaved()
+        isCardAvailable()
+        showProfileAndCardWarning()
+    }
+    
+    func isProfileSaved() {
+        profileDataAvailable = defaults.bool(forKey: UserDefaultKeys.IS_PROFILE_AVAILABLE)
+        if (profileDataAvailable) {
+            loadProfileData()
+        } else {
+            showWarningMessage(message: Messages.WARNING_MESSAGE_PROFILE_NOT_SET)
+        }
+    }
+    
+    func isCardAvailable() {
+        isCardDataAvailable = defaults.bool(forKey: UserDefaultKeys.IS_CARDS_AVAILABLE)
+        if (isCardDataAvailable) {
+            loadCardData()
+        } else {
+            showWarningMessage(message: Messages.WARNING_MESSAGE_CARD_NOT_AVAILABLE)
+        }
+    }
+    
+    func showProfileAndCardWarning() {
+        if (!profileDataAvailable && !isCardDataAvailable) {
+            let warningMessage = Messages.WARNING_MESSAGE_CARD_NOT_AVAILABLE + Messages.DOUBLE_LINE_BREAK + Messages.WARNING_MESSAGE_PROFILE_NOT_SET
+            showWarningMessage(message: warningMessage)
+        }
+    }
+    
+    func loadProfileData() {
+        
+    }
+    
+    func loadCardData() {
         
     }
     
@@ -34,7 +72,7 @@ class HomeVC: UIViewController {
     
     func hideWarningMessage() {
         warningMessageContainer.isHidden = true
-        warningMessage.text = ""
+        warningMessage.text = Messages.EMPTY
     }
 
     @IBAction func aboutAction(_ sender: UIBarButtonItem) {

@@ -23,6 +23,10 @@ class ProfileVC: BaseVC {
         super.viewDidLoad()
         self.tabBarController?.tabBar.isHidden = true
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = true
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

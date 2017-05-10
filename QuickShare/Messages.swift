@@ -19,5 +19,9 @@ class Messages {
     public static let ABOUT_DIALOG_TITLE: String = "About"
     public static let ABOUT_DIALOG_MESSAGE: String = "Copyright © 2017 Quick Share. All rights reserved."
     public static let ABOUT_DIALOG_EMAIL_ID: String = "gokulnath.aws@gmail.com"
+    
+    public static let WARNING_MESSAGE_LOADING = "Please Wait. Loading..."
+    public static let WARNING_MESSAGE_PROFILE_NOT_SET = "Please click on My Profile tab to set your profile."
+    public static let WARNING_MESSAGE_CARD_NOT_AVAILABLE = "No Cards.\nPlease add cards using \"+\" button."
 
 }

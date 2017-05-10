@@ -21,7 +21,35 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oa2-dl-P5f">
+                                <rect key="frame" x="36" y="283.5" width="303" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbe-eh-mDa">
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="100"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Gbe-eh-mDa" secondAttribute="trailing" id="6Bu-Jq-2i4"/>
+                                    <constraint firstItem="Gbe-eh-mDa" firstAttribute="leading" secondItem="Oa2-dl-P5f" secondAttribute="leading" id="8Rt-IG-C6C"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gbe-eh-mDa" secondAttribute="bottom" id="awe-R4-zfh"/>
+                                    <constraint firstItem="Gbe-eh-mDa" firstAttribute="centerY" secondItem="Oa2-dl-P5f" secondAttribute="centerY" id="bV4-M0-pmp"/>
+                                    <constraint firstItem="Gbe-eh-mDa" firstAttribute="top" secondItem="Oa2-dl-P5f" secondAttribute="top" id="ejs-gT-fjx"/>
+                                    <constraint firstItem="Gbe-eh-mDa" firstAttribute="centerX" secondItem="Oa2-dl-P5f" secondAttribute="centerX" id="j2r-5H-K5r"/>
+                                    <constraint firstAttribute="height" constant="100" id="jqo-U4-wH8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Oa2-dl-P5f" secondAttribute="trailing" constant="20" id="Pxa-dh-JBD"/>
+                            <constraint firstItem="Oa2-dl-P5f" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="X6t-Gh-ZUL"/>
+                            <constraint firstItem="Oa2-dl-P5f" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="l4O-eU-HQz"/>
+                            <constraint firstItem="Oa2-dl-P5f" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="20" id="m5s-s5-8gd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Quick Share" id="Ibj-dB-i2Z">
                         <barButtonItem key="leftBarButtonItem" title="About" id="JeR-Fv-hHu">
@@ -34,6 +62,10 @@
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="warningMessage" destination="Gbe-eh-mDa" id="SCe-PY-iMW"/>
+                        <outlet property="warningMessageContainer" destination="Oa2-dl-P5f" id="1SC-Kr-7VJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -203,9 +235,10 @@
         <!--My Profile-->
         <scene sceneID="T5T-AR-XNc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="rmG-5q-hpg" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rmG-5q-hpg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Profile" image="profile" id="cPa-gy-q4n"/>
                     <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ziu-0W-PZ1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

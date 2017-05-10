@@ -10,14 +10,31 @@ import UIKit
 
 class HomeVC: UIViewController {
 
+    @IBOutlet weak var warningMessageContainer: UIView!
+    @IBOutlet weak var warningMessage: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        showWarningMessage(message: Messages.WARNING_MESSAGE_LOADING)
+        warningMessageContainer.isHidden = false
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+    }
+    
+    func showWarningMessage(message: String) {
+        warningMessageContainer.isHidden = false
+        warningMessage.text = message
+    }
+    
+    func hideWarningMessage() {
+        warningMessageContainer.isHidden = true
+        warningMessage.text = ""
     }
 
     @IBAction func aboutAction(_ sender: UIBarButtonItem) {
